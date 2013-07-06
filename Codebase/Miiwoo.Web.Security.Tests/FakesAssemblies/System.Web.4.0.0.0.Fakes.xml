@@ -1,0 +1,860 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Web.4.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Web.Fakes.ShimHttpContext">
+            <summary>Shim type of System.Web.HttpContext</summary>
+        </member>
+        <member name="M:System.Web.Fakes.ShimHttpContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Web.Fakes.ShimHttpContext.#ctor(System.Web.HttpContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Web.Fakes.ShimHttpContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Fakes.ShimHttpContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Fakes.ShimHttpContext.Bind(System.IServiceProvider)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AddDelayedHttpSessionStateSessionStateModule">
+            <summary>Sets the shim of HttpContext.AddDelayedHttpSessionState(SessionStateModule module)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AddErrorException">
+            <summary>Sets the shim of HttpContext.AddError(Exception errorInfo)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllErrorsGet">
+            <summary>Sets the shim of HttpContext.get_AllErrors()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ApplicationGet">
+            <summary>Sets the shim of HttpContext.get_Application()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ApplicationInstanceGet">
+            <summary>Sets the shim of HttpContext.get_ApplicationInstance()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ApplicationInstanceSetHttpApplication">
+            <summary>Sets the shim of HttpContext.set_ApplicationInstance(HttpApplication value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AreResponseHeadersSentGet">
+            <summary>Sets the shim of HttpContext.get_AreResponseHeadersSent()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AsyncAppHandlerGet">
+            <summary>Sets the shim of HttpContext.get_AsyncAppHandler()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AsyncAppHandlerSetIHttpAsyncHandler">
+            <summary>Sets the shim of HttpContext.set_AsyncAppHandler(IHttpAsyncHandler value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.BeginCancellablePeriod">
+            <summary>Sets the shim of HttpContext.BeginCancellablePeriod()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.CacheGet">
+            <summary>Sets the shim of HttpContext.get_Cache()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ClearError">
+            <summary>Sets the shim of HttpContext.ClearError()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ClearReferences">
+            <summary>Sets the shim of HttpContext.ClearReferences()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ClientIdentityTokenGet">
+            <summary>Sets the shim of HttpContext.get_ClientIdentityToken()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ConstructorHttpRequestHttpResponse">
+            <summary>Sets the shim of HttpContext.HttpContext(HttpRequest request, HttpResponse response)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ConstructorHttpWorkerRequest">
+            <summary>Sets the shim of HttpContext.HttpContext(HttpWorkerRequest wr)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ConstructorHttpWorkerRequestBoolean">
+            <summary>Sets the shim of HttpContext.HttpContext(HttpWorkerRequest wr, Boolean initResponseWriter)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ContextPtrGet">
+            <summary>Sets the shim of HttpContext.get_ContextPtr()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.CurrentGet">
+            <summary>Sets the shim of HttpContext.get_Current()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.CurrentHandlerGet">
+            <summary>Sets the shim of HttpContext.get_CurrentHandler()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.CurrentModuleEventIndexGet">
+            <summary>Sets the shim of HttpContext.get_CurrentModuleEventIndex()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.CurrentModuleEventIndexSetInt32">
+            <summary>Sets the shim of HttpContext.set_CurrentModuleEventIndex(Int32 value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.CurrentModuleIndexGet">
+            <summary>Sets the shim of HttpContext.get_CurrentModuleIndex()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.CurrentModuleIndexSetInt32">
+            <summary>Sets the shim of HttpContext.set_CurrentModuleIndex(Int32 value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.CurrentNotificationFlagsGet">
+            <summary>Sets the shim of HttpContext.get_CurrentNotificationFlags()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.CurrentNotificationFlagsSetInt32">
+            <summary>Sets the shim of HttpContext.set_CurrentNotificationFlags(Int32 value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.CurrentNotificationGet">
+            <summary>Sets the shim of HttpContext.get_CurrentNotification()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.CurrentNotificationSetRequestNotification">
+            <summary>Sets the shim of HttpContext.set_CurrentNotification(RequestNotification value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.CurrentSetHttpContext">
+            <summary>Sets the shim of HttpContext.set_Current(HttpContext value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.DisableNotificationsRequestNotificationRequestNotification">
+            <summary>Sets the shim of HttpContext.DisableNotifications(RequestNotification notifications, RequestNotification postNotifications)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.DisposePrincipal">
+            <summary>Sets the shim of HttpContext.DisposePrincipal()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.EndCancellablePeriod">
+            <summary>Sets the shim of HttpContext.EndCancellablePeriod()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.EnsureTimeout">
+            <summary>Sets the shim of HttpContext.EnsureTimeout()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ErrorGet">
+            <summary>Sets the shim of HttpContext.get_Error()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.FinishPipelineRequest">
+            <summary>Sets the shim of HttpContext.FinishPipelineRequest()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.FinishRequestForCachedPathDataInt32">
+            <summary>Sets the shim of HttpContext.FinishRequestForCachedPathData(Int32 statusCode)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.GetAppConfigString">
+            <summary>Sets the shim of HttpContext.GetAppConfig(String name)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.GetConfigString">
+            <summary>Sets the shim of HttpContext.GetConfig(String name)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.GetGlobalResourceObjectStringString">
+            <summary>Sets the shim of HttpContext.GetGlobalResourceObject(String classKey, String resourceKey)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.GetLocalResourceObjectStringString">
+            <summary>Sets the shim of HttpContext.GetLocalResourceObject(String virtualPath, String resourceKey)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.GetSectionString">
+            <summary>Sets the shim of HttpContext.GetSection(String sectionName)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.HandlerGet">
+            <summary>Sets the shim of HttpContext.get_Handler()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.HandlerSetIHttpHandler">
+            <summary>Sets the shim of HttpContext.set_Handler(IHttpHandler value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ImpersonationTokenGet">
+            <summary>Sets the shim of HttpContext.get_ImpersonationToken()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.IsChangeInRequestHeadersGet">
+            <summary>Sets the shim of HttpContext.get_IsChangeInRequestHeaders()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.IsChangeInResponseHeadersGet">
+            <summary>Sets the shim of HttpContext.get_IsChangeInResponseHeaders()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.IsChangeInResponseStatusGet">
+            <summary>Sets the shim of HttpContext.get_IsChangeInResponseStatus()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.IsChangeInServerVarsGet">
+            <summary>Sets the shim of HttpContext.get_IsChangeInServerVars()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.IsChangeInUserPrincipalGet">
+            <summary>Sets the shim of HttpContext.get_IsChangeInUserPrincipal()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.IsClientImpersonationConfiguredGet">
+            <summary>Sets the shim of HttpContext.get_IsClientImpersonationConfigured()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.IsCustomErrorEnabledGet">
+            <summary>Sets the shim of HttpContext.get_IsCustomErrorEnabled()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.IsDebuggingEnabledGet">
+            <summary>Sets the shim of HttpContext.get_IsDebuggingEnabled()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.IsInCancellablePeriodGet">
+            <summary>Sets the shim of HttpContext.get_IsInCancellablePeriod()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.IsPostNotificationGet">
+            <summary>Sets the shim of HttpContext.get_IsPostNotification()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.IsPostNotificationSetBoolean">
+            <summary>Sets the shim of HttpContext.set_IsPostNotification(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.IsSendResponseHeadersGet">
+            <summary>Sets the shim of HttpContext.get_IsSendResponseHeaders()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ItemsGet">
+            <summary>Sets the shim of HttpContext.get_Items()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.NeedToInitializeApp">
+            <summary>Sets the shim of HttpContext.NeedToInitializeApp()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.PopTraceContext">
+            <summary>Sets the shim of HttpContext.PopTraceContext()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.PreventPostbackGet">
+            <summary>Sets the shim of HttpContext.get_PreventPostback()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.PreventPostbackSetBoolean">
+            <summary>Sets the shim of HttpContext.set_PreventPostback(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.PreviousHandlerGet">
+            <summary>Sets the shim of HttpContext.get_PreviousHandler()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ProfileGet">
+            <summary>Sets the shim of HttpContext.get_Profile()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.PushTraceContext">
+            <summary>Sets the shim of HttpContext.PushTraceContext()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ReadOnlySessionStateGet">
+            <summary>Sets the shim of HttpContext.get_ReadOnlySessionState()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.RemapHandlerIHttpHandler">
+            <summary>Sets the shim of HttpContext.RemapHandler(IHttpHandler handler)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.RemapHandlerInstanceGet">
+            <summary>Sets the shim of HttpContext.get_RemapHandlerInstance()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.RemoveDelayedHttpSessionState">
+            <summary>Sets the shim of HttpContext.RemoveDelayedHttpSessionState()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.RemoveSqlDependencyCookie">
+            <summary>Sets the shim of HttpContext.RemoveSqlDependencyCookie()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ReportRuntimeErrorIfExistsRequestNotificationStatusRef">
+            <summary>Sets the shim of HttpContext.ReportRuntimeErrorIfExists(RequestNotificationStatus&amp; status)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.RequestGet">
+            <summary>Sets the shim of HttpContext.get_Request()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.RequestRequiresAuthorization">
+            <summary>Sets the shim of HttpContext.RequestRequiresAuthorization()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.RequiresSessionStateGet">
+            <summary>Sets the shim of HttpContext.get_RequiresSessionState()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ResetSqlDependencyCookie">
+            <summary>Sets the shim of HttpContext.ResetSqlDependencyCookie()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ResponseGet">
+            <summary>Sets the shim of HttpContext.get_Response()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.RestoreCurrentHandler">
+            <summary>Sets the shim of HttpContext.RestoreCurrentHandler()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.RewritePathString">
+            <summary>Sets the shim of HttpContext.RewritePath(String path)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.RewritePathStringBoolean">
+            <summary>Sets the shim of HttpContext.RewritePath(String path, Boolean rebaseClientPath)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.RewritePathStringStringString">
+            <summary>Sets the shim of HttpContext.RewritePath(String filePath, String pathInfo, String queryString)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.RewritePathStringStringStringBoolean">
+            <summary>Sets the shim of HttpContext.RewritePath(String filePath, String pathInfo, String queryString, Boolean setClientFilePath)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.Root">
+            <summary>Sets the shim of HttpContext.Root()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SendEmptyResponse">
+            <summary>Sets the shim of HttpContext.SendEmptyResponse()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ServerExecuteDepthGet">
+            <summary>Sets the shim of HttpContext.get_ServerExecuteDepth()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ServerExecuteDepthSetInt32">
+            <summary>Sets the shim of HttpContext.set_ServerExecuteDepth(Int32 value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ServerGet">
+            <summary>Sets the shim of HttpContext.get_Server()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SessionGet">
+            <summary>Sets the shim of HttpContext.get_Session()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SessionStateBehaviorGet">
+            <summary>Sets the shim of HttpContext.get_SessionStateBehavior()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SessionStateBehaviorSetSessionStateBehavior">
+            <summary>Sets the shim of HttpContext.set_SessionStateBehavior(SessionStateBehavior value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SetCurrentHandlerIHttpHandler">
+            <summary>Sets the shim of HttpContext.SetCurrentHandler(IHttpHandler newtHandler)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SetImpersonationEnabled">
+            <summary>Sets the shim of HttpContext.SetImpersonationEnabled()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SetPrincipalNoDemandIPrincipal">
+            <summary>Sets the shim of HttpContext.SetPrincipalNoDemand(IPrincipal principal)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SetPrincipalNoDemandIPrincipalBoolean">
+            <summary>Sets the shim of HttpContext.SetPrincipalNoDemand(IPrincipal principal, Boolean needToSetNativePrincipal)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SetSessionStateBehaviorSessionStateBehavior">
+            <summary>Sets the shim of HttpContext.SetSessionStateBehavior(SessionStateBehavior sessionStateBehavior)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SetSkipAuthorizationNoDemandBooleanBoolean">
+            <summary>Sets the shim of HttpContext.SetSkipAuthorizationNoDemand(Boolean value, Boolean managedOnly)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SetStartTime">
+            <summary>Sets the shim of HttpContext.SetStartTime()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SkipAuthorizationGet">
+            <summary>Sets the shim of HttpContext.get_SkipAuthorization()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SkipAuthorizationSetBoolean">
+            <summary>Sets the shim of HttpContext.set_SkipAuthorization(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SqlDependencyCookieGet">
+            <summary>Sets the shim of HttpContext.get_SqlDependencyCookie()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SqlDependencyCookieSetString">
+            <summary>Sets the shim of HttpContext.set_SqlDependencyCookie(String value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.StaticConstructor">
+            <summary>Sets the shim of HttpContext.HttpContext()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.SystemIServiceProviderGetServiceType">
+            <summary>Sets the shim of HttpContext.System.IServiceProvider.GetService(Type service)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.TempErrorGet">
+            <summary>Sets the shim of HttpContext.get_TempError()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.TempErrorSetException">
+            <summary>Sets the shim of HttpContext.set_TempError(Exception value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.TemplateControlGet">
+            <summary>Sets the shim of HttpContext.get_TemplateControl()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.TemplateControlSetTemplateControl">
+            <summary>Sets the shim of HttpContext.set_TemplateControl(TemplateControl value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.TimeoutGet">
+            <summary>Sets the shim of HttpContext.get_Timeout()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.TimeoutSetTimeSpan">
+            <summary>Sets the shim of HttpContext.set_Timeout(TimeSpan value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.TimestampGet">
+            <summary>Sets the shim of HttpContext.get_Timestamp()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.TopHandlerGet">
+            <summary>Sets the shim of HttpContext.get_TopHandler()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.TraceGet">
+            <summary>Sets the shim of HttpContext.get_Trace()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.TraceIsEnabledGet">
+            <summary>Sets the shim of HttpContext.get_TraceIsEnabled()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.TraceIsEnabledSetBoolean">
+            <summary>Sets the shim of HttpContext.set_TraceIsEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.Unroot">
+            <summary>Sets the shim of HttpContext.Unroot()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.UserGet">
+            <summary>Sets the shim of HttpContext.get_User()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.UserLanguageFromContext">
+            <summary>Sets the shim of HttpContext.UserLanguageFromContext()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.UserSetIPrincipal">
+            <summary>Sets the shim of HttpContext.set_User(IPrincipal value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.UsesImpersonationGet">
+            <summary>Sets the shim of HttpContext.get_UsesImpersonation()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.UtcTimestampGet">
+            <summary>Sets the shim of HttpContext.get_UtcTimestamp()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.ValidatePath">
+            <summary>Sets the shim of HttpContext.ValidatePath()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.WaitForExceptionIfCancelled">
+            <summary>Sets the shim of HttpContext.WaitForExceptionIfCancelled()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.WorkerRequestGet">
+            <summary>Sets the shim of HttpContext.get_WorkerRequest()</summary>
+        </member>
+        <member name="T:System.Web.Fakes.ShimHttpContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.AddDelayedHttpSessionStateSessionStateModule">
+            <summary>Sets the shim of HttpContext.AddDelayedHttpSessionState(SessionStateModule module)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.AddErrorException">
+            <summary>Sets the shim of HttpContext.AddError(Exception errorInfo)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.AllErrorsGet">
+            <summary>Sets the shim of HttpContext.get_AllErrors()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ApplicationGet">
+            <summary>Sets the shim of HttpContext.get_Application()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ApplicationInstanceGet">
+            <summary>Sets the shim of HttpContext.get_ApplicationInstance()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ApplicationInstanceSetHttpApplication">
+            <summary>Sets the shim of HttpContext.set_ApplicationInstance(HttpApplication value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.AreResponseHeadersSentGet">
+            <summary>Sets the shim of HttpContext.get_AreResponseHeadersSent()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.AsyncAppHandlerGet">
+            <summary>Sets the shim of HttpContext.get_AsyncAppHandler()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.AsyncAppHandlerSetIHttpAsyncHandler">
+            <summary>Sets the shim of HttpContext.set_AsyncAppHandler(IHttpAsyncHandler value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.BeginCancellablePeriod">
+            <summary>Sets the shim of HttpContext.BeginCancellablePeriod()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.CacheGet">
+            <summary>Sets the shim of HttpContext.get_Cache()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ClearError">
+            <summary>Sets the shim of HttpContext.ClearError()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ClearReferences">
+            <summary>Sets the shim of HttpContext.ClearReferences()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ClientIdentityTokenGet">
+            <summary>Sets the shim of HttpContext.get_ClientIdentityToken()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ContextPtrGet">
+            <summary>Sets the shim of HttpContext.get_ContextPtr()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.CurrentHandlerGet">
+            <summary>Sets the shim of HttpContext.get_CurrentHandler()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.CurrentModuleEventIndexGet">
+            <summary>Sets the shim of HttpContext.get_CurrentModuleEventIndex()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.CurrentModuleEventIndexSetInt32">
+            <summary>Sets the shim of HttpContext.set_CurrentModuleEventIndex(Int32 value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.CurrentModuleIndexGet">
+            <summary>Sets the shim of HttpContext.get_CurrentModuleIndex()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.CurrentModuleIndexSetInt32">
+            <summary>Sets the shim of HttpContext.set_CurrentModuleIndex(Int32 value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.CurrentNotificationFlagsGet">
+            <summary>Sets the shim of HttpContext.get_CurrentNotificationFlags()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.CurrentNotificationFlagsSetInt32">
+            <summary>Sets the shim of HttpContext.set_CurrentNotificationFlags(Int32 value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.CurrentNotificationGet">
+            <summary>Sets the shim of HttpContext.get_CurrentNotification()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.CurrentNotificationSetRequestNotification">
+            <summary>Sets the shim of HttpContext.set_CurrentNotification(RequestNotification value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.DisableNotificationsRequestNotificationRequestNotification">
+            <summary>Sets the shim of HttpContext.DisableNotifications(RequestNotification notifications, RequestNotification postNotifications)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.DisposePrincipal">
+            <summary>Sets the shim of HttpContext.DisposePrincipal()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.EndCancellablePeriod">
+            <summary>Sets the shim of HttpContext.EndCancellablePeriod()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.EnsureTimeout">
+            <summary>Sets the shim of HttpContext.EnsureTimeout()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ErrorGet">
+            <summary>Sets the shim of HttpContext.get_Error()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.FinishPipelineRequest">
+            <summary>Sets the shim of HttpContext.FinishPipelineRequest()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.FinishRequestForCachedPathDataInt32">
+            <summary>Sets the shim of HttpContext.FinishRequestForCachedPathData(Int32 statusCode)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.GetConfigString">
+            <summary>Sets the shim of HttpContext.GetConfig(String name)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.GetSectionString">
+            <summary>Sets the shim of HttpContext.GetSection(String sectionName)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.HandlerGet">
+            <summary>Sets the shim of HttpContext.get_Handler()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.HandlerSetIHttpHandler">
+            <summary>Sets the shim of HttpContext.set_Handler(IHttpHandler value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ImpersonationTokenGet">
+            <summary>Sets the shim of HttpContext.get_ImpersonationToken()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.IsChangeInRequestHeadersGet">
+            <summary>Sets the shim of HttpContext.get_IsChangeInRequestHeaders()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.IsChangeInResponseHeadersGet">
+            <summary>Sets the shim of HttpContext.get_IsChangeInResponseHeaders()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.IsChangeInResponseStatusGet">
+            <summary>Sets the shim of HttpContext.get_IsChangeInResponseStatus()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.IsChangeInServerVarsGet">
+            <summary>Sets the shim of HttpContext.get_IsChangeInServerVars()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.IsChangeInUserPrincipalGet">
+            <summary>Sets the shim of HttpContext.get_IsChangeInUserPrincipal()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.IsClientImpersonationConfiguredGet">
+            <summary>Sets the shim of HttpContext.get_IsClientImpersonationConfigured()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.IsCustomErrorEnabledGet">
+            <summary>Sets the shim of HttpContext.get_IsCustomErrorEnabled()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.IsDebuggingEnabledGet">
+            <summary>Sets the shim of HttpContext.get_IsDebuggingEnabled()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.IsInCancellablePeriodGet">
+            <summary>Sets the shim of HttpContext.get_IsInCancellablePeriod()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.IsPostNotificationGet">
+            <summary>Sets the shim of HttpContext.get_IsPostNotification()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.IsPostNotificationSetBoolean">
+            <summary>Sets the shim of HttpContext.set_IsPostNotification(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.IsSendResponseHeadersGet">
+            <summary>Sets the shim of HttpContext.get_IsSendResponseHeaders()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ItemsGet">
+            <summary>Sets the shim of HttpContext.get_Items()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.NeedToInitializeApp">
+            <summary>Sets the shim of HttpContext.NeedToInitializeApp()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.PopTraceContext">
+            <summary>Sets the shim of HttpContext.PopTraceContext()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.PreventPostbackGet">
+            <summary>Sets the shim of HttpContext.get_PreventPostback()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.PreventPostbackSetBoolean">
+            <summary>Sets the shim of HttpContext.set_PreventPostback(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.PreviousHandlerGet">
+            <summary>Sets the shim of HttpContext.get_PreviousHandler()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ProfileGet">
+            <summary>Sets the shim of HttpContext.get_Profile()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.PushTraceContext">
+            <summary>Sets the shim of HttpContext.PushTraceContext()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ReadOnlySessionStateGet">
+            <summary>Sets the shim of HttpContext.get_ReadOnlySessionState()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.RemapHandlerIHttpHandler">
+            <summary>Sets the shim of HttpContext.RemapHandler(IHttpHandler handler)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.RemapHandlerInstanceGet">
+            <summary>Sets the shim of HttpContext.get_RemapHandlerInstance()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.RemoveDelayedHttpSessionState">
+            <summary>Sets the shim of HttpContext.RemoveDelayedHttpSessionState()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.RemoveSqlDependencyCookie">
+            <summary>Sets the shim of HttpContext.RemoveSqlDependencyCookie()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ReportRuntimeErrorIfExistsRequestNotificationStatusRef">
+            <summary>Sets the shim of HttpContext.ReportRuntimeErrorIfExists(RequestNotificationStatus&amp; status)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.RequestGet">
+            <summary>Sets the shim of HttpContext.get_Request()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.RequestRequiresAuthorization">
+            <summary>Sets the shim of HttpContext.RequestRequiresAuthorization()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.RequiresSessionStateGet">
+            <summary>Sets the shim of HttpContext.get_RequiresSessionState()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ResetSqlDependencyCookie">
+            <summary>Sets the shim of HttpContext.ResetSqlDependencyCookie()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ResponseGet">
+            <summary>Sets the shim of HttpContext.get_Response()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.RestoreCurrentHandler">
+            <summary>Sets the shim of HttpContext.RestoreCurrentHandler()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.RewritePathString">
+            <summary>Sets the shim of HttpContext.RewritePath(String path)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.RewritePathStringBoolean">
+            <summary>Sets the shim of HttpContext.RewritePath(String path, Boolean rebaseClientPath)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.RewritePathStringStringString">
+            <summary>Sets the shim of HttpContext.RewritePath(String filePath, String pathInfo, String queryString)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.RewritePathStringStringStringBoolean">
+            <summary>Sets the shim of HttpContext.RewritePath(String filePath, String pathInfo, String queryString, Boolean setClientFilePath)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.Root">
+            <summary>Sets the shim of HttpContext.Root()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SendEmptyResponse">
+            <summary>Sets the shim of HttpContext.SendEmptyResponse()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ServerExecuteDepthGet">
+            <summary>Sets the shim of HttpContext.get_ServerExecuteDepth()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ServerExecuteDepthSetInt32">
+            <summary>Sets the shim of HttpContext.set_ServerExecuteDepth(Int32 value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ServerGet">
+            <summary>Sets the shim of HttpContext.get_Server()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SessionGet">
+            <summary>Sets the shim of HttpContext.get_Session()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SessionStateBehaviorGet">
+            <summary>Sets the shim of HttpContext.get_SessionStateBehavior()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SessionStateBehaviorSetSessionStateBehavior">
+            <summary>Sets the shim of HttpContext.set_SessionStateBehavior(SessionStateBehavior value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SetCurrentHandlerIHttpHandler">
+            <summary>Sets the shim of HttpContext.SetCurrentHandler(IHttpHandler newtHandler)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SetImpersonationEnabled">
+            <summary>Sets the shim of HttpContext.SetImpersonationEnabled()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SetPrincipalNoDemandIPrincipal">
+            <summary>Sets the shim of HttpContext.SetPrincipalNoDemand(IPrincipal principal)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SetPrincipalNoDemandIPrincipalBoolean">
+            <summary>Sets the shim of HttpContext.SetPrincipalNoDemand(IPrincipal principal, Boolean needToSetNativePrincipal)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SetSessionStateBehaviorSessionStateBehavior">
+            <summary>Sets the shim of HttpContext.SetSessionStateBehavior(SessionStateBehavior sessionStateBehavior)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SetSkipAuthorizationNoDemandBooleanBoolean">
+            <summary>Sets the shim of HttpContext.SetSkipAuthorizationNoDemand(Boolean value, Boolean managedOnly)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SetStartTime">
+            <summary>Sets the shim of HttpContext.SetStartTime()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SkipAuthorizationGet">
+            <summary>Sets the shim of HttpContext.get_SkipAuthorization()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SkipAuthorizationSetBoolean">
+            <summary>Sets the shim of HttpContext.set_SkipAuthorization(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SqlDependencyCookieGet">
+            <summary>Sets the shim of HttpContext.get_SqlDependencyCookie()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SqlDependencyCookieSetString">
+            <summary>Sets the shim of HttpContext.set_SqlDependencyCookie(String value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.SystemIServiceProviderGetServiceType">
+            <summary>Sets the shim of HttpContext.System.IServiceProvider.GetService(Type service)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.TempErrorGet">
+            <summary>Sets the shim of HttpContext.get_TempError()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.TempErrorSetException">
+            <summary>Sets the shim of HttpContext.set_TempError(Exception value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.TemplateControlGet">
+            <summary>Sets the shim of HttpContext.get_TemplateControl()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.TemplateControlSetTemplateControl">
+            <summary>Sets the shim of HttpContext.set_TemplateControl(TemplateControl value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.TimeoutGet">
+            <summary>Sets the shim of HttpContext.get_Timeout()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.TimeoutSetTimeSpan">
+            <summary>Sets the shim of HttpContext.set_Timeout(TimeSpan value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.TimestampGet">
+            <summary>Sets the shim of HttpContext.get_Timestamp()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.TopHandlerGet">
+            <summary>Sets the shim of HttpContext.get_TopHandler()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.TraceGet">
+            <summary>Sets the shim of HttpContext.get_Trace()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.TraceIsEnabledGet">
+            <summary>Sets the shim of HttpContext.get_TraceIsEnabled()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.TraceIsEnabledSetBoolean">
+            <summary>Sets the shim of HttpContext.set_TraceIsEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.Unroot">
+            <summary>Sets the shim of HttpContext.Unroot()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.UserGet">
+            <summary>Sets the shim of HttpContext.get_User()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.UserLanguageFromContext">
+            <summary>Sets the shim of HttpContext.UserLanguageFromContext()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.UserSetIPrincipal">
+            <summary>Sets the shim of HttpContext.set_User(IPrincipal value)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.UsesImpersonationGet">
+            <summary>Sets the shim of HttpContext.get_UsesImpersonation()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.UtcTimestampGet">
+            <summary>Sets the shim of HttpContext.get_UtcTimestamp()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.ValidatePath">
+            <summary>Sets the shim of HttpContext.ValidatePath()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.WaitForExceptionIfCancelled">
+            <summary>Sets the shim of HttpContext.WaitForExceptionIfCancelled()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpContext.AllInstances.WorkerRequestGet">
+            <summary>Sets the shim of HttpContext.get_WorkerRequest()</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimFormsAuthentication">
+            <summary>Shim type of System.Web.Security.FormsAuthentication</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimFormsAuthentication.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimFormsAuthentication.#ctor(System.Web.Security.FormsAuthentication)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimFormsAuthentication.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimFormsAuthentication.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.AuthenticateStringString">
+            <summary>Sets the shim of FormsAuthentication.Authenticate(String name, String password)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.Constructor">
+            <summary>Sets the shim of FormsAuthentication.FormsAuthentication()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.CookieDomainGet">
+            <summary>Sets the shim of FormsAuthentication.get_CookieDomain()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.CookieModeGet">
+            <summary>Sets the shim of FormsAuthentication.get_CookieMode()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.CookiesSupportedGet">
+            <summary>Sets the shim of FormsAuthentication.get_CookiesSupported()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.DecryptString">
+            <summary>Sets the shim of FormsAuthentication.Decrypt(String encryptedTicket)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.DefaultUrlGet">
+            <summary>Sets the shim of FormsAuthentication.get_DefaultUrl()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.EnableCrossAppRedirectsGet">
+            <summary>Sets the shim of FormsAuthentication.get_EnableCrossAppRedirects()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.EnableFormsAuthenticationNameValueCollection">
+            <summary>Sets the shim of FormsAuthentication.EnableFormsAuthentication(NameValueCollection configurationData)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.EncryptFormsAuthenticationTicket">
+            <summary>Sets the shim of FormsAuthentication.Encrypt(FormsAuthenticationTicket ticket)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.FormsCookieNameGet">
+            <summary>Sets the shim of FormsAuthentication.get_FormsCookieName()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.FormsCookiePathGet">
+            <summary>Sets the shim of FormsAuthentication.get_FormsCookiePath()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.GetAuthCookieStringBoolean">
+            <summary>Sets the shim of FormsAuthentication.GetAuthCookie(String userName, Boolean createPersistentCookie)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.GetAuthCookieStringBooleanString">
+            <summary>Sets the shim of FormsAuthentication.GetAuthCookie(String userName, Boolean createPersistentCookie, String strCookiePath)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.GetLoginPageString">
+            <summary>Sets the shim of FormsAuthentication.GetLoginPage(String extraQueryString)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.GetLoginPageStringBoolean">
+            <summary>Sets the shim of FormsAuthentication.GetLoginPage(String extraQueryString, Boolean reuseReturnUrl)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.GetRedirectUrlStringBoolean">
+            <summary>Sets the shim of FormsAuthentication.GetRedirectUrl(String userName, Boolean createPersistentCookie)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.GetReturnUrlBoolean">
+            <summary>Sets the shim of FormsAuthentication.GetReturnUrl(Boolean useDefaultIfAbsent)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.HashPasswordForStoringInConfigFileStringString">
+            <summary>Sets the shim of FormsAuthentication.HashPasswordForStoringInConfigFile(String password, String passwordFormat)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.Initialize">
+            <summary>Sets the shim of FormsAuthentication.Initialize()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.IsEnabledGet">
+            <summary>Sets the shim of FormsAuthentication.get_IsEnabled()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.LoginUrlGet">
+            <summary>Sets the shim of FormsAuthentication.get_LoginUrl()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.RedirectFromLoginPageStringBoolean">
+            <summary>Sets the shim of FormsAuthentication.RedirectFromLoginPage(String userName, Boolean createPersistentCookie)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.RedirectFromLoginPageStringBooleanString">
+            <summary>Sets the shim of FormsAuthentication.RedirectFromLoginPage(String userName, Boolean createPersistentCookie, String strCookiePath)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.RedirectToLoginPage">
+            <summary>Sets the shim of FormsAuthentication.RedirectToLoginPage()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.RedirectToLoginPageString">
+            <summary>Sets the shim of FormsAuthentication.RedirectToLoginPage(String extraQueryString)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.RemoveQueryStringVariableFromUrlStringString">
+            <summary>Sets the shim of FormsAuthentication.RemoveQueryStringVariableFromUrl(String strUrl, String QSVar)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.RenewTicketIfOldFormsAuthenticationTicket">
+            <summary>Sets the shim of FormsAuthentication.RenewTicketIfOld(FormsAuthenticationTicket tOld)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.RequireSSLGet">
+            <summary>Sets the shim of FormsAuthentication.get_RequireSSL()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.SetAuthCookieStringBoolean">
+            <summary>Sets the shim of FormsAuthentication.SetAuthCookie(String userName, Boolean createPersistentCookie)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.SetAuthCookieStringBooleanString">
+            <summary>Sets the shim of FormsAuthentication.SetAuthCookie(String userName, Boolean createPersistentCookie, String strCookiePath)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.SignOut">
+            <summary>Sets the shim of FormsAuthentication.SignOut()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.SlidingExpirationGet">
+            <summary>Sets the shim of FormsAuthentication.get_SlidingExpiration()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.StaticConstructor">
+            <summary>Sets the shim of FormsAuthentication.FormsAuthentication()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.TicketCompatibilityModeGet">
+            <summary>Sets the shim of FormsAuthentication.get_TicketCompatibilityMode()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimFormsAuthentication.TimeoutGet">
+            <summary>Sets the shim of FormsAuthentication.get_Timeout()</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimFormsAuthentication.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+    </members>
+</doc>
