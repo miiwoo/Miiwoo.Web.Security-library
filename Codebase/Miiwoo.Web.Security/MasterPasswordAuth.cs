@@ -101,7 +101,7 @@ namespace Miiwoo.Web.Security
                 // Password was incorrect.
                 return false;
             }
-            else throw new InvalidOperationException("Master Authentication requires Forms Authentication with cookies via HTTPS.");
+            else throw new InvalidOperationException("Master password authentication requires Forms Authentication with cookies via HTTPS.");
         }
 
         public bool Login(string masterPassword, bool persist = false)
