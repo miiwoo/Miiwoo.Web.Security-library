@@ -70,6 +70,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Miiwoo.Web.Security.Tests-CHANGELOG.txt" />
     <Content Include="Miiwoo.Web.Security.Tests-LICENSE.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
