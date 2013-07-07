@@ -31,12 +31,14 @@ namespace Miiwoo.Web.Security.Tests
         /// Helper method that prepares the shimming environment.
         /// </summary>
         /// <param name="action">The action to perform while shimming the HttpContext.</param>
-        protected static void WhileShimming(Action<HttpContext> action)
+        protected static void WhileShimming(Action<HttpContext> action, bool httpSecure = true)
         {
             using (ShimsContext.Create())
             {
                 // Preparation.
-                var httpContext = new HttpContext(new HttpRequest(null, "http://localhost", null), new HttpResponse(null));
+                var httpContext = new HttpContext(new HttpRequest(null, "https://localhost", null), new HttpResponse(null));
+                // Pretend we have a SSL connection.
+                System.Web.Fakes.ShimHttpRequest.AllInstances.IsSecureConnectionGet = request => httpSecure;
                 System.Web.Fakes.ShimHttpContext.CurrentGet = () => httpContext;
                 System.Configuration.Fakes.ShimConfigurationManager.AppSettingsGet = () =>
                 {
@@ -64,6 +66,18 @@ namespace Miiwoo.Web.Security.Tests
                 Assert.IsTrue(auth.Login(TestMasterPasswordOkay), "Correct password invalid.");
                 Assert.IsTrue(httpContext.Response.Cookies.Count == 1, "No cookie was set.");
             });
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(HttpException))]
+        public void InsecureHttpLoginThrows()
+        {
+            WhileShimming(httpContext =>
+            {
+                var auth = new WebConfigMasterPasswordAuth();
+                // Assert.
+                auth.Login(TestMasterPasswordOkay);
+            }, httpSecure: false);
         }
 
         [TestMethod]

@@ -1,0 +1,7 @@
+﻿Miiwoo.Web.Security - Changelog
+
+1.0.1 - Minor Improvements Release / 2013-07-07
+ * Improved cookie setting for WebConfigMasterPasswordAuth; uses the standard Forms Authentication way.
+
+1.0 - Initial Release / 2013-07-06
+ * Added WebConfigMasterPasswordAuth component.

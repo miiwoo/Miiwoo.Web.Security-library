@@ -93,9 +93,7 @@ namespace Miiwoo.Web.Security
                 if (computedHash.Equals(passwordHash.ToUpper()))
                 {
                     // Password is valid, authenticate the user by setting a cookie.
-                    var cookie = FormsAuthentication.GetAuthCookie(username, createPersistentCookie: persist);
-                    cookie.HttpOnly = true; // Do not allow script access, on browsers that support this flag.
-                    HttpContext.Current.Response.SetCookie(cookie);
+                    FormsAuthentication.SetAuthCookie(username, persist);
                     return true;
                 }
                 // Password was incorrect.

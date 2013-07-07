@@ -1,0 +1,9 @@
+﻿Miiwoo.Web.Security.Tests - Changelog
+
+1.0.1 - Minor Improvements Release / 2013-07-07
+ * Added tests for WebConfigMasterPasswordAuth to test:
+    * Using the Login on an insecure HTTP connection would throw a framework exception.
+
+1.0 - Initial Release / 2013-07-06
+ * Added tests for WebConfigMasterPasswordAuth to test:
+    * Login with valid or invalid password scenarios.
